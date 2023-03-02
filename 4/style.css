@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: radial-gradient(gray, white);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 600px;
+    background-color: gainsboro;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+header input {
+    border: none;
+    outline: none;
+    width: 300px;
+    padding: 10px 5px 0px 5px;
+    font-size: 15px;
+    background-color: gainsboro;
+    border-bottom: 2px solid black;
+    margin-top: 10px;
+}
+
+header button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.content {
+    border: 2px solid gainsboro;
+    border-radius: 140px;
+    background-color: gainsboro;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+    width: 1000px;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+.wrapper_label {
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.li {
+    color: gray;
+}
+
+li {
+    border: 2px solid gainsboro;
+    border-radius: 140px;
+    background-color: gainsboro;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 25px;
+    width: 500px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    list-style: none;
+    width: 100%;
+}
+
+.delete_btn {
+    border: 2px solid black;
+    color: black;
+    border-radius: 100px;
+    background-color: gainsboro;
+    width: 150px;
+}
+
+.open_modal {
+    border: 2px solid black;
+    color: black;
+    border-radius: 100px;
+    background-color: gainsboro;
+    width: 150px;
+}
+
+.container {
+    border: 2px solid gainsboro;
+    background-color: black;
+    color: gainsboro;
+    border-radius: 100px;
+    width: 300px;
+    height: 100px;
+}
+
+.none {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.847);
+}
+
+.form_modal {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 40px;
+    padding: 50px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.modal_div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_label {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.modal_div input {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    color: black;
+}
+
+.modal_div input:focus {
+    color: black;
+}
+
+.modal_btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.exit {
+    border: 2px solid gainsboro;
+    background-color: white;
+    color: black;
+    width: 100px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.edit_form {
+    border: 2px solid gainsboro;
+    background-color: white;
+    color: black;
+    width: 120px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-size: 18px;
+}

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.side_pannel_container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: 0.5s;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: gray;
+}
+
+.side_pannel {
+    display: flex;
+    flex-direction: column;
+}
+
+.side_pannel a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.side_pannel button {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+}
+
+main {
+    position: relative;
+}
+
+.burger_menu {
+    border: 3px solid black;
+    padding: 20px;
+    background-color: white;
+}
+
+.burger_menu img {
+    width: 30px;
+}

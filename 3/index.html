@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            padding: 100px 0 0 100px;
+            position: relative;
+        }
+        
+        .search_wrapper {
+            display: flex;
+        }
+        
+        .loupe img {
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border: none;
+        }
+        
+        .loupe {
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .container {
+            border: 1px solid gray;
+            padding: 10px;
+            width: 265px;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .burger {
+            width: 50px;
+            cursor: pointer;
+        }
+        
+        .x_button {
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            display: none;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+        }
+        
+        .search {
+            outline: none;
+            border: none;
+            height: 50px;
+            width: 200px;
+            font-size: 18px;
+            background-color: rgb(171, 170, 170);
+            border-bottom: 3px solid rgb(62, 62, 62);
+        }
+        
+        .search:focus {
+            background-color: white;
+        }
+        
+        .auxiliary_links {
+            width: 243px;
+            height: 117px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            border: 2px solid black;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        
+        .auxiliary_links a {
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
+    <title>3</title>
+</head>
+
+<body>
+    <img src="burger.png" class="burger">
+    <button class="x_button">X</button>
+    <div class="container">
+        <div class="search_wrapper">
+            <input type="text" class="search">
+            <button class="loupe"><img src="loupe.png"></button>
+        </div>
+        <div class="auxiliary_links">
+            <a href="#">Новости</a>
+            <a href="#">Вакансии</a>
+            <a href="#">События</a>
+            <a href="#">Зарплаты</a>
+            <a href="#">Компании</a>
+            <a href="#">Блоги</a>
+            <a href="#">Корпблоги</a>
+            <a href="#">Курсы</a>
+            <a href="#">Обучение</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
