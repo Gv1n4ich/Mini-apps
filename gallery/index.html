@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backgrond switch</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            border: 3px solid rgb(161, 159, 159);
+            padding: 15px;
+        }
+        
+        .images_wrapper {
+            border: 3px solid rgb(161, 159, 159, 0.208);
+            padding: 15px;
+            border-radius: 15px;
+            background-color: rgba(161, 159, 159, 0.208);
+            width: 1000px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .images_wrapper img {
+            width: 280px;
+            height: 150px;
+            border-radius: 10px;
+        }
+        
+        .images_wrapper img:hover {
+            transform: scale(1.1);
+            transition: 1s;
+            z-index: 2;
+        }
+        
+        body {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="images_wrapper">
+            <img src="first.jpg" alt="1" class="first">
+            <img src="second.jpg" alt="2" class="second">
+            <img src="third.jpg" alt="3" class="third">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
