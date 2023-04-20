@@ -13,26 +13,16 @@ buttons.forEach((btn) => {
 
 
 function openTab(actBtn, blockId) {
-    console.log(actBtn);
-    console.log(blockId);
+
     buttons.forEach((item) => {
-        if (item == event.target) {
-            item.classList.add('active')
-        } else {
-            item.classList.remove('active')
-        }
+        item.classList.remove('active')
     })
+    actBtn.classList.add('active')
+
     contentTabs.forEach((item) => {
-        let newBlock = item.id
-        if (newBlock == blockId) {
+        item.classList.remove('active')
+        if (item.id == blockId) {
             item.classList.add('active')
-        } else {
-            item.classList.remove('active')
-        }
-        if (item.classList.contains('active')) {
-            item.style.display = `block`
-        } else {
-            item.style.display = `none`
         }
     })
 }
