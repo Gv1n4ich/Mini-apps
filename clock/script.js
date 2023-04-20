@@ -1,26 +1,17 @@
 const container = document.querySelector('.container');
 
-const firstSpan = document.querySelector(".first");
-const secondSpan = document.querySelector(".second");
-const thirdSpan = document.querySelector(".third");
+const firstSpan = document.querySelector('first';
+const secondSpan = document.querySelector('second';
+const thirdSpan = document.querySelector('.third');
 
 
-const Timer = document.querySelector('.container');
+const timer = document.querySelector('.container');
 
 function getTimer() {
-    const Timer = new Date();
-    firstSpan.textContent = Timer.getHours()
-    secondSpan.textContent = Timer.getMinutes()
-    thirdSpan.textContent = Timer.getSeconds()
-    if (Number(thirdSpan.textContent) < 10) {
-        thirdSpan.textContent = `0` + Timer.getSeconds()
-    }
-    if (Number(firstSpan.textContent) < 10) {
-        thirdSpan.textContent = `0` + Timer.getSeconds()
-    }
-    if (Number(secondSpan.textContent) < 10) {
-        thirdSpan.textContent = `0` + Timer.getSeconds()
-    }
+    const timer = new Date();
+    firstSpan.textContent = Timer.getHours() < 10 ? firstSpan.textContent = '0' + Timer.getHours() : Timer.getHours()
+    secondSpan.textContent = Timer.getMinutes() < 10 ? secondSpan.textContent = '0' + Timer.getMinutes() : Timer.getMinutes()
+    thirdSpan.textContent = Timer.getSeconds() < 10 ? thirdSpan.textContent = '0' + Timer.getSeconds() : Timer.getSeconds()
 }
 
 
